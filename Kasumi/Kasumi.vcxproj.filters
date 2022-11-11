@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="src\Kasumi\Core.h" />
+    <ClInclude Include="src\Kasumi\Application.h" />
+    <ClInclude Include="src\Kasumi.h" />
+    <ClInclude Include="src\Kasumi\EntryPoint.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Kasumi\Application.cpp" />
+  </ItemGroup>
+</Project>
