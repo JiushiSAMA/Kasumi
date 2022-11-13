@@ -1,12 +1,93 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClInclude Include="src\Kasumi\Core.h" />
-    <ClInclude Include="src\Kasumi\Application.h" />
-    <ClInclude Include="src\Kasumi.h" />
-    <ClInclude Include="src\Kasumi\EntryPoint.h" />
+    <Filter Include="Kasumi">
+      <UniqueIdentifier>{8F44EEBD-7BE6-1894-64A1-2CE850E29FE4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Kasumi\Events">
+      <UniqueIdentifier>{9359F546-FF19-717D-C854-BAFA34D4B559}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Kasumi\ImGui">
+      <UniqueIdentifier>{F9A861E3-E50B-F187-8E91-293E7AD3BC0A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\OpenGL">
+      <UniqueIdentifier>{1E7D2C1D-8A08-9AE1-9319-1DD6FF23F6E1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Kasumi\Application.cpp" />
+    <ClInclude Include="src\Kasumi.h" />
+    <ClInclude Include="src\Kasumi\Application.h">
+      <Filter>Kasumi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kasumi\Core.h">
+      <Filter>Kasumi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kasumi\EntryPoint.h">
+      <Filter>Kasumi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kasumi\Events\ApplicationEvent.h">
+      <Filter>Kasumi\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kasumi\Events\Event.h">
+      <Filter>Kasumi\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kasumi\Events\KeyEvent.h">
+      <Filter>Kasumi\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kasumi\Events\MouseEvent.h">
+      <Filter>Kasumi\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kasumi\ImGui\ImGuiLayer.h">
+      <Filter>Kasumi\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kasumi\Layer.h">
+      <Filter>Kasumi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kasumi\LayerStack.h">
+      <Filter>Kasumi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kasumi\Log.h">
+      <Filter>Kasumi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kasumi\Window.h">
+      <Filter>Kasumi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h">
+      <Filter>Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ksmpch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Kasumi\Application.cpp">
+      <Filter>Kasumi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Kasumi\ImGui\ImGuiLayer.cpp">
+      <Filter>Kasumi\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Kasumi\Layer.cpp">
+      <Filter>Kasumi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Kasumi\LayerStack.cpp">
+      <Filter>Kasumi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Kasumi\Log.cpp">
+      <Filter>Kasumi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
+      <Filter>Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ksmpch.cpp" />
   </ItemGroup>
 </Project>
